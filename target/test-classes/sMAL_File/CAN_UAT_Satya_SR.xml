@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- edited with XMLSpy v2008 rel. 2 sp1 (http://www.altova.com) by ChiaChi (Finetre Corporation) --><saml2p:Response xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol" Destination="https://uat.annuitynet3.ebix.com/login/saml/" ID="_cffc642d-d911-433f-ab0d-f6c8c149a22b" IssueInstant="2014-12-01T13:59:33.849Z" Version="2.0">
+  <saml2:Issuer xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">my.advisor-connection.com</saml2:Issuer>
+  <saml2p:Status>
+    <saml2p:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success"/>
+  </saml2p:Status>
+  <saml2:Assertion xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion" ID="_1a17a8d8-b9bb-4e3e-90c1-9b7ba8e0bcb1" IssueInstant="2014-12-01T13:59:33.850Z" Version="2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <saml2:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">my.advisor-connection.com</saml2:Issuer>
+    <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+      <ds:SignedInfo>
+        <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+        <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+        <ds:Reference URI="#_1a17a8d8-b9bb-4e3e-90c1-9b7ba8e0bcb1">
+          <ds:Transforms>
+            <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+            <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#">
+              <ec:InclusiveNamespaces xmlns:ec="http://www.w3.org/2001/10/xml-exc-c14n#" PrefixList="xs"/>
+            </ds:Transform>
+          </ds:Transforms>
+          <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+          <ds:DigestValue>iBoot+BsBMmvZ3in2llHkrQ4iuY=</ds:DigestValue>
+        </ds:Reference>
+      </ds:SignedInfo>
+      <ds:SignatureValue>
+dzZuDaY/Xj96Lk36g5Izon0xcQWpxtUfOGKEcixwzkUMf8ELEt1to+8En2bkfLGkAJYI+wIheyWV
+bF3zrr2l8Ls11JoT3nSeirIHgB+YRqyGsdx1q9f0sAkW6kpOf13bzWzUK7U+11bCebfExMoA+ijD
+6atVzTiSGvhcCtvByVfZPLWAMqHylXQN3QWg9fR/aj3mugifVZhj/qfQs3qeF9qEwBuTnXTwOFFF
+VF/uErZ6Az1xSuqkfl79lRnSR7UQ0C3UwkrW4q8JhBP16BV973yjQ/ZfWE/43G8CxomLKaHQL4eh
+P/qb0VDsoLbaN8jzEi6j1Ca1MS3aW6f5IugVCw==
+</ds:SignatureValue>
+    </ds:Signature>
+    <saml2:Subject>
+      <saml2:NameID Format="urn:oasis:names:tc:SAML:2.0:nameid-format:transient">1432341</saml2:NameID>
+      <saml2:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+        <saml2:SubjectConfirmationData NotOnOrAfter="2029-12-01T04:04:33.849Z" Recipient="https://uat.eannuity.ebix.com/login/saml/"/>
+      </saml2:SubjectConfirmation>
+    </saml2:Subject>
+    <saml2:Conditions NotBefore="2014-12-01T04:04:33.849Z" NotOnOrAfter="2029-12-01T04:04:33.849Z"/>
+    <saml2:AuthnStatement AuthnInstant="2014-12-31T13:59:33.850Z" SessionIndex="_e00709b6-5153-450f-8bd4-fb5c64087d2d">
+      <saml2:AuthnContext>
+        <saml2:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport</saml2:AuthnContextClassRef>
+      </saml2:AuthnContext>
+    </saml2:AuthnStatement>
+    <saml2:AttributeStatement>
+      <saml2:Attribute Name="action" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+        <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">NewApplication</saml2:AttributeValue>
+      </saml2:Attribute>
+      <saml2:Attribute Name="sendingpartyid" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+        <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">CAN_NSCC</saml2:AttributeValue>
+      </saml2:Attribute>
+      <saml2:Attribute Name="sessionid" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+        <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">F56BBC6894C21D7580F8ACB1143F217AD28C9A114BEDE882D94BD95899845E2D76F2BDEF71032D27</saml2:AttributeValue>
+      </saml2:Attribute>
+      <saml2:Attribute Name="userid" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic" FriendlyName="userid">
+        <saml2:AttributeValue>Satya_SR</saml2:AttributeValue>
+      </saml2:Attribute>
+      <saml2:Attribute Name="data" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+        <saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string"><![CDATA[   <RESPONSE>
+	<SESSION_ID>PLACEHOLDER</SESSION_ID>
+	<USER>
+		<IDS>
+			<ID PARTY_ID="CAN_NSCC">Satya_SR</ID>
+		</IDS>
+	</USER>
+	<ACTION>NewApplication</ACTION>
+	<EXTENSIONS>
+		<EXTENSION>
+			<IDS>
+				<ID PARTY_ID="CAN_NSCC">PREFILL_DATA</ID>
+			</IDS>
+			<PARTNER_SPACES>
+				<PARTNER_SPACE>
+					<NAME>APP_PREFILL_DATA</NAME>
+					<CONTENT>
+    <STEP WIZARD="DISTRIBUTOR" TYPE="ADDITIONAL_CLIENT_QUESTIONS" NAME="ADDITIONAL_CLIENT_QUESTIONS">
+              <QUESTION>
+                <ID>INVESTMENT_EXPERIENCE_STOCKS</ID>
+                <VALUE>1</VALUE>
+              </QUESTION>
+              <QUESTION>
+                <ID>INVESTMENT_EXPERIENCE_BONDS</ID>
+                <VALUE>0</VALUE>
+              </QUESTION>
+              <QUESTION>
+                <ID>INVESTMENT_EXPERIENCE_MUTUAL_FUNDS</ID>
+                <VALUE>0</VALUE>
+              </QUESTION>
+              <QUESTION>
+                <ID>INVESTMENT_EXPERIENCE_OPTIONS</ID>
+                <VALUE>0</VALUE>
+              </QUESTION>
+              <QUESTION>
+                <ID>INVESTMENT_EXPERIENCE_DPP</ID>
+                <VALUE>0</VALUE>
+              </QUESTION>
+              <QUESTION>
+                <ID>INVESTMENT_EXPERIENCE_REIT</ID>
+                <VALUE>0</VALUE>
+              </QUESTION>
+              <QUESTION>
+                <ID>INVESTMENT_EXPERIENCE_OTHER</ID>
+               <VALUE>0</VALUE>
+              </QUESTION>
+              <QUESTION>
+                <ID>INVESTMENT_EXPERIENCE_YEARS</ID>
+                <VALUE>0</VALUE>
+              </QUESTION>
+              <QUESTION>
+                <ID>PRIMARY_SUBACCOUNT_INV_OBJECTIVE</ID>
+                <VALUE>Capital Preservation</VALUE>
+              </QUESTION>
+              <QUESTION>
+                <ID>RISK_TOLERANCE</ID>
+                <VALUE>Conservative</VALUE>
+              </QUESTION>
+              <QUESTION>
+                <ID>ACCOUNT_LIQUIDITY_NEEDS_LOWER_BOUND</ID>
+                <VALUE>0</VALUE>
+              </QUESTION>
+              <QUESTION>
+                <ID>ACCOUNT_LIQUIDITY_NEEDS_UPPER_BOUND</ID>
+                <VALUE>0</VALUE>
+              </QUESTION>
+              <QUESTION>
+                <ID>ANNUAL_INCOME_LOWER_BOUND</ID>
+                <VALUE>400000</VALUE>
+              </QUESTION>
+              <QUESTION>
+                <ID>ANNUAL_INCOME_UPPER_BOUND</ID>
+                <VALUE>99999</VALUE>
+              </QUESTION>
+              <QUESTION>
+                <ID>ADJUSTED_NET_WORTH_LOWER_BOUND</ID>
+                <VALUE>3000000</VALUE>
+              </QUESTION>
+              <QUESTION>
+                <ID>ADJUSTED_NET_WORTH_UPPER_BOUND</ID>
+                <VALUE>9999</VALUE>
+              </QUESTION>
+              <QUESTION>
+                <ID>LIQUID_NET_WORTH_LOWER_BOUND</ID>
+                <VALUE>3000000</VALUE>
+              </QUESTION>
+              <QUESTION>
+                <ID>LIQUID_NET_WORTH_UPPER_BOUND</ID>
+                <VALUE>9999</VALUE>
+              </QUESTION>
+              <QUESTION>
+                <ID>ACCOUNT_TIME_HORIZON_LOWER_BOUND</ID>
+                <VALUE>9</VALUE>
+              </QUESTION>
+              <QUESTION>
+                <ID>ACCOUNT_TIME_HORIZON_UPPER_BOUND</ID>
+                <VALUE>999</VALUE>
+              </QUESTION>
+              <QUESTION>
+                <ID>TAX_BRACKET_LOWER_BOUND</ID>
+                <VALUE>37</VALUE>
+              </QUESTION>
+              <QUESTION>
+                <ID>TAX_BRACKET_UPPER_BOUND</ID>
+                <VALUE>99</VALUE>
+              </QUESTION>
+              <QUESTION>
+                <ID>CETERA_ACCOUNT_REGISTRATION_TYPE</ID>
+                <VALUE>JOINT WITH SURVIVORSHIP</VALUE>
+              </QUESTION>
+              <QUESTION>
+                <ID>CETERA_CLIENT_TYPE</ID>
+                <VALUE>PERSON</VALUE>
+              </QUESTION>
+              <QUESTION>
+                <ID>REP_NUMBER</ID>
+                <VALUE>32663</VALUE>
+              </QUESTION>
+                          </STEP>
+                                  <PLAN>
+                                  <EXTENSIONS>
+								<EXTENSION>
+									<PARAMETERS>
+										<PARAMETER>
+											<NAME>ACCOUNT_DESIGNATION</NAME>
+											<VALUE>OWNER</VALUE>
+										</PARAMETER>
+									</PARAMETERS>
+								</EXTENSION>
+							</EXTENSIONS>
+						</PLAN>
+      	              <ENTITIES>
+							<ENTITY>
+								<IDS>
+									<ID PARTY_ID="TRANSACTION">PRIMARY_OWNER</ID>
+								</IDS>
+								<RELATIONSHIP>SELF</RELATIONSHIP>
+								<CITIZENSHIP>US</CITIZENSHIP>
+								<PERSON_NAME>
+								<PREFIX>Atty</PREFIX>
+									<FIRST_NAME>PATRICK</FIRST_NAME>
+									<MIDDLE_NAME>T</MIDDLE_NAME>
+									<LAST_NAME>CULLEY-DP</LAST_NAME>
+                                   <SUFFIX>Sr</SUFFIX>
+								</PERSON_NAME>
+								<ADDRESSES>
+                                            <ADDRESS>
+                                            <TYPE>HOME</TYPE>
+										<LINE1>123 HAPPY HOMES CT</LINE1>
+										<LINE2>abc</LINE2>
+										<CITY>SAINT CLOUD</CITY>
+										<STATE>CA</STATE>
+										<POSTAL_CODE>90001</POSTAL_CODE>
+									</ADDRESS>
+									 <ADDRESS>
+                                            <TYPE>MAILING</TYPE>
+										<LINE1>123 HAPPY HOMES CT</LINE1>
+										<LINE2>abc</LINE2>
+										<CITY>SAINT CLOUD</CITY>
+										<STATE>CA</STATE>
+										<POSTAL_CODE>90001</POSTAL_CODE>
+									</ADDRESS>
+								</ADDRESSES>
+								<TELEPHONES>
+									<TELEPHONE>
+										<NUMBER>2799294482</NUMBER>
+									</TELEPHONE>
+								</TELEPHONES>
+								<DATE>10241953</DATE>
+								<TAX_IDS>
+									<TAX_ID>
+										<VALUE>111223389</VALUE>
+										<TYPE>SOCIAL_SECURITY_NUMBER</TYPE>
+									</TAX_ID>
+								</TAX_IDS>
+								<EMAIL>pratima.shisodia@ebix.com</EMAIL>
+								<TYPE>PERSON</TYPE>
+								<CONTRACT_ROLES>
+									<CONTRACT_ROLE>
+										<TYPE>PRIMARY_OWNER</TYPE>
+									</CONTRACT_ROLE>
+								</CONTRACT_ROLES>
+								<ACCOUNTS>
+									<ACCOUNT>
+										<IDS>
+											<ID PARTY_ID="TRANSACTION">CLIENT_ACCOUNT_NUMBER</ID>
+										</IDS>
+										<NUMBER>8DA15619</NUMBER>
+									</ACCOUNT>
+								</ACCOUNTS>
+							</ENTITY>
+							<ENTITY>
+								<IDS>
+									<ID PARTY_ID="TRANSACTION">JOINT_OWNER</ID>
+								</IDS>
+								<RELATIONSHIP/>
+								<CITIZENSHIP>US</CITIZENSHIP>
+								<PERSON_NAME>
+								<PREFIX>Atty</PREFIX>
+									<FIRST_NAME>DOTTIE</FIRST_NAME>
+                                    <MIDDLE_NAME>T</MIDDLE_NAME>
+									<LAST_NAME>CULLEY-DP</LAST_NAME>
+                               <SUFFIX>Sr</SUFFIX>
+								</PERSON_NAME>
+								<ADDRESSES>
+                                              <ADDRESS>
+                                            <TYPE>HOME</TYPE>
+										<LINE1>123 HAPPY HOMES CT</LINE1>
+										<LINE2>abc</LINE2>
+										<CITY>SAINT CLOUD</CITY>
+										<STATE>MI</STATE>
+										<POSTAL_CODE>48002</POSTAL_CODE>
+									</ADDRESS>
+									 <ADDRESS>
+                                            <TYPE>MAILING</TYPE>
+										<LINE1>123 HAPPY HOMES CT</LINE1>
+										<LINE2>abc</LINE2>
+										<CITY>SAINT CLOUD</CITY>
+										<STATE>MI</STATE>
+										<POSTAL_CODE>48002</POSTAL_CODE>
+									</ADDRESS>
+								</ADDRESSES>
+								<TELEPHONES>
+									<TELEPHONE>
+										<NUMBER>2799294482</NUMBER>
+									</TELEPHONE>
+								</TELEPHONES>
+								<DATE>06022011</DATE>
+								<TAX_IDS>
+									<TAX_ID>
+										<VALUE>448460443</VALUE>
+										<TYPE>SOCIAL_SECURITY_NUMBER</TYPE>
+									</TAX_ID>
+								</TAX_IDS>
+								<EMAIL>pratima.shisodia@ebix.com</EMAIL>
+								<TYPE>PERSON</TYPE>
+								<CONTRACT_ROLES>
+									<CONTRACT_ROLE>
+										<TYPE>JOINT_OWNER</TYPE>
+									</CONTRACT_ROLE>
+								</CONTRACT_ROLES>
+								<ACCOUNTS>
+									<ACCOUNT>
+										<IDS>
+											<ID PARTY_ID="TRANSACTION">CLIENT_ACCOUNT_NUMBER</ID>
+										</IDS>
+										<NUMBER>AN5390857</NUMBER>
+									</ACCOUNT>
+								</ACCOUNTS>
+							</ENTITY>
+						</ENTITIES>
+					</CONTENT>
+				</PARTNER_SPACE>
+			</PARTNER_SPACES>
+			<PARAMETERS>
+				<PARAMETER>
+					<NAME>AE_NUMBER</NAME>
+					<VALUE>BU-9274</VALUE>
+				</PARAMETER>
+				<PARAMETER>
+					<NAME>AGENT_OF_RECORD_AN4_USER_ID</NAME>
+					<VALUE>Satya_SR</VALUE>
+				</PARAMETER>
+			</PARAMETERS>
+		</EXTENSION>
+	</EXTENSIONS>
+</RESPONSE>]]></saml2:AttributeValue>
+      </saml2:Attribute>
+    </saml2:AttributeStatement>
+  </saml2:Assertion>
+</saml2p:Response>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

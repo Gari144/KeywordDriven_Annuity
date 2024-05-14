@@ -1,0 +1,328 @@
+<!-- edited with XMLSpy v2015 (x64) (http://www.altova.com) by Hari (Ebix, Inc.) -->
+<saml2p:Response xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol" Destination="URL OF EbixHub System. Example: https://www.ebixhub.ebix.com/sso/client/SAMLLogin.aspx" ID="A Unique Identifier. " IssueInstant="Datetime Stamp when this assertion was generate. ex: 2013-01-25T05:19:30.388Z" Version="2.0">
+	<saml2:Issuer xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion" Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">EBIXSTP</saml2:Issuer>
+	<saml2p:Status>
+		<saml2p:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success"/>
+	</saml2p:Status>
+	<saml2:Assertion xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion" ID="A unique ID of the assertion. This should NOT be the same value as ID under Response node. " IssueInstant="Datetime Stamp when this assertion was generate. ex: 2013-01-25T05:19:30.388Z" Version="2.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+		<saml2:Issuer Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity">EBIXSTP</saml2:Issuer>
+		<Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+			<SignedInfo>
+				<CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+				<SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+				<Reference URI="This will be the ID value speficied under Assertion. This value is always prefixed by # sign.">
+					<Transforms>
+						<Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+						<Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#">
+							<InclusiveNamespaces xmlns="http://www.w3.org/2001/10/xml-exc-c14n#" PrefixList="xs"/>
+						</Transform>
+					</Transforms>
+					<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+					<DigestValue>+L3rZfDxkh1BfwcWED5DhNd0Nd4=</DigestValue>
+				</Reference>
+			</SignedInfo>
+			<SignatureValue>kytW2bs2XS1sPUEad6LsJGzRP6nGdLTPrGRXnN8OSjUqrXt6PoJc7dFjVcVVon9gXV+Sn211GQSfSWITPIhRBFrkUmfg/Ul/h4sZNtV62H8FGhJMmd5GTY7nPwQfK8BrdwWZkW+Wp2npjKCiPMwIUA2NKRRNoCYg4kZ/CcwC+WS5mZCHD2gcdLF4ozSSmRZHyzhHMCvSz5wJsNu7bYKnwXuZqTHFP6QgO1AJXa9iArD/cbJH3G4ea0aIWsmHea//0ZdyGPbN45WHaCB/JXoijr5r7Cp+AlsZsyqpFejOhc8bJVZI28QiyREAQDw2kQDRujjb2P8ofz9ISt0bVCLJ3g==</SignatureValue>
+		</Signature>
+		<saml2:Subject>
+			<saml2:NameID Format="urn:oasis:names:tc:SAML:2.0:nameid-format:ClientID">JPMC</saml2:NameID>
+			<saml2:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+				<saml2:SubjectConfirmationData NotOnOrAfter="Datetime Stamp Ex.  2013-01-25T05:24:30.388Z" Recipient="LIFESPEED"/>
+			</saml2:SubjectConfirmation>
+		</saml2:Subject>
+		<saml2:Conditions NotBefore="2020-12-17T13:11:35.505Z" NotOnOrAfter="2022-12-17T13:17:35.505Z">
+			<saml2:AudienceRestriction>
+				<saml2:Audience>LIFESPEED</saml2:Audience>
+			</saml2:AudienceRestriction>
+		</saml2:Conditions>
+		<saml2:AuthnStatement AuthnInstant="Datetime Stamp when this statement was generate. ex:2013-01-25T05:19:30.388Z" SessionIndex="This is the session ID of the user that is generated in client system.">
+			<saml2:AuthnContext>
+				<saml2:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport</saml2:AuthnContextClassRef>
+			</saml2:AuthnContext>
+		</saml2:AuthnStatement>
+		<saml2:AttributeStatement>
+			<saml2:Attribute Name="userId" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+				<saml2:AttributeValue>Vishal</saml2:AttributeValue>
+			</saml2:Attribute>
+			<saml2:Attribute Name="destinationApp" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+				<saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">This is an optional field. This should be used only when user should go to an applicaton directly, instead of seeing a welcome screen. Put the EE App code here. These codes can be confirmed from STP team.</saml2:AttributeValue>
+			</saml2:Attribute>
+			<saml2:Attribute Name="action" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+				<saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string">Application</saml2:AttributeValue>
+			</saml2:Attribute>
+			<saml2:Attribute Name="data" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:basic">
+				<saml2:AttributeValue xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="xs:string"><![CDATA[<Data>
+	<Extensions>
+		<Extension Id="clientData">
+			<User>
+				<Ids>
+					<Id>
+						<PartyId>JPMC</PartyId>
+						<IdValue>Suneel</IdValue>
+					</Id>
+				</Ids>
+				<TaxIds>
+					<TaxId>
+						<Value/>
+						<Type>SOCIAL_SECURITY_NUMBER</Type>
+					</TaxId>
+					<OtherIdentifier>
+						<Value>65451125</Value>
+						<!-- 6 to 10 digit number -->
+						<Type>NATIONAL_PRODUCER_NUMBER</Type>
+					</OtherIdentifier>
+				</TaxIds>
+				<EmailAddress>suneel.k@ebix.com</EmailAddress>
+				<Role>
+					<Ids>
+						<Id>
+							<PartyId>JPMC</PartyId>
+							<IdValue>SU</IdValue>
+						</Id>
+					</Ids>
+				</Role>
+				<PersonName>
+					<Prefix></Prefix>
+					<FirstName>Suneel</FirstName>
+					<MName/>
+					<LastName>Kumar</LastName>
+					<Suffix></Suffix>
+				</PersonName>
+				<BusinessUnitLinks>
+					<BusinessUnitLink>
+						<Ids>
+							<Id>
+								<PartyId>JPMC</PartyId>
+								<IdValue>Sales Rep ID</IdValue>
+							</Id>
+						</Ids>
+					</BusinessUnitLink>
+				</BusinessUnitLinks>
+				<Telephones>
+					<Telephone>
+						<Number/>
+						<Type>Work</Type>
+					</Telephone>
+					<Telephone>
+						<Number/>
+						<Type>Home</Type>
+					</Telephone>
+					<Telephone>
+						<Number/>
+						<Type>Mobile</Type>
+					</Telephone>
+				</Telephones>
+				<Parameters>
+					<Parameter>
+						<Name>SomeName</Name>
+						<Value>SomeValue</Value>
+					</Parameter>
+				</Parameters>
+			</User>
+			<BusinessUnits>
+				<BusinessUnit>
+					<Ids>
+						<Id>
+							<PartyId>JPMC</PartyId>
+							<IdValue>JPMC</IdValue>
+						</Id>
+					</Ids>
+					<Name>JPMORGAN CHASE</Name>
+					<Class>
+						<Id>
+							<PartyId>JPMC</PartyId>
+							<IdValue>Level 1</IdValue>
+						</Id>
+					</Class>
+					<Parent>
+						<Id>
+							<PartyId>JPMC</PartyId>
+							<IdValue>JPMC</IdValue>
+						</Id>
+					</Parent>
+					<Address>
+						<Line1>GREENWICH 1</Line1>
+						<Line2>GREENWICH 2</Line2>
+						<Line3>GREENWICH 3</Line3>
+						<City>MONTGOMERY</City>
+						<State>AL</State>
+						<PostalCode>35005</PostalCode>
+						<Country>US</Country>
+					</Address>
+				</BusinessUnit>
+				<BusinessUnit>
+					<Ids>
+						<Id>
+							<PartyId>JPMC</PartyId>
+							<IdValue>CWM</IdValue>
+						</Id>
+					</Ids>
+					<Name>LOB Name</Name>
+					<Class>
+						<Id>
+							<PartyId>JPMC</PartyId>
+							<IdValue>Level 2</IdValue>
+						</Id>
+					</Class>
+					<Parent>
+						<Id>
+							<PartyId>JPMC</PartyId>
+							<IdValue>JPMC</IdValue>
+						</Id>
+					</Parent>
+					<Address>
+						<Line1>GREENWICH 1</Line1>
+						<Line2>GREENWICH 2</Line2>
+						<Line3>GREENWICH 3</Line3>
+						<City>MONTGOMERY</City>
+						<State>AL</State>
+						<PostalCode>35005</PostalCode>
+						<Country>US</Country>
+					</Address>
+				</BusinessUnit>
+				<BusinessUnit>
+					<Ids>
+						<Id>
+							<PartyId>JPMC</PartyId>
+							<IdValue>Branch Code</IdValue>
+						</Id>
+					</Ids>
+					<Name>Branch Name</Name>
+					<Class>
+						<Id>
+							<PartyId>JPMC</PartyId>
+							<IdValue>Level 3</IdValue>
+						</Id>
+					</Class>
+					<Parent>
+						<Id>
+							<PartyId>JPMC</PartyId>
+							<IdValue>CWM OR JPMS OR USPB</IdValue>
+						</Id>
+					</Parent>
+					<Address>
+						<Line1>GREENWICH 1</Line1>
+						<Line2>GREENWICH 2</Line2>
+						<Line3>GREENWICH 3</Line3>
+						<City>MONTGOMERY</City>
+						<State>AL</State>
+						<PostalCode>35005</PostalCode>
+						<Country>US</Country>
+					</Address>
+				</BusinessUnit>
+				<BusinessUnit>
+					<Ids>
+						<Id>
+							<PartyId>JPMC</PartyId>
+							<IdValue>Sales Rep ID</IdValue>
+						</Id>
+					</Ids>
+					<Name>Sales Rep Name</Name>
+					<Class>
+						<Id>
+							<PartyId>JPMC</PartyId>
+							<IdValue>Level 4</IdValue>
+						</Id>
+					</Class>
+					<Parent>
+						<Id>
+							<PartyId>JPMC</PartyId>
+							<IdValue>Branch Code</IdValue>
+						</Id>
+					</Parent>
+					<Address>
+						<Line1>GREENWICH 1</Line1>
+						<Line2>GREENWICH 2</Line2>
+						<Line3>GREENWICH 3</Line3>
+						<City>MONTGOMERY</City>
+						<State>AL</State>
+						<PostalCode>35005</PostalCode>
+						<Country>US</Country>
+					</Address>
+				</BusinessUnit>
+			</BusinessUnits>
+			<Product>
+				<Ids>
+					<Id>
+						<PartyId>JPMC</PartyId>
+						<IdValue>123456</IdValue>
+					</Id>
+				</Ids>
+				<Names>
+					<Name>
+						<TYPE>LONG</TYPE>
+						<VALUE>MultiOption Guide B Series</VALUE>
+					</Name>
+					<Name>
+						<TYPE>SHORT</TYPE>
+						<VALUE>MultiOption Guide B Series</VALUE>
+					</Name>
+					<Name>
+						<TYPE>DISPLAY</TYPE>
+						<VALUE>MultiOption Guide B Series</VALUE>
+					</Name>
+				</Names>
+				<CUSIP>02640E663</CUSIP>
+				<Type>
+					<Category>Value of ProductType node  shared by SO (from VQ or WF) to JPMC</Category>
+					<LineOfBusiness>LIFE</LineOfBusiness>
+				</Type>
+				<Parameters>
+					<Parameter>
+						<Name>ProductCode</Name>
+						<Value>374</Value>
+					</Parameter>
+					<Parameter>
+						<Name>CarrierCode</Name>
+						<Value>60488</Value>
+					</Parameter>
+				</Parameters>
+			</Product>
+			<Parameters>
+				<Parameter>
+					<Name>ClientAccountNumber</Name>
+					<!-- Distributor Client Account Number ex: BIN#-->
+					<Value>ATTACHGREEN</Value>
+				</Parameter>
+				<Parameter>
+					<Name>SolicitationCity</Name>
+					<!-- aka signing City-->
+					<Value>Bend</Value>
+				</Parameter>
+				<Parameter>
+					<Name>SolicitationState</Name>
+					<!-- aka signing state-->
+					<Value>MN</Value>
+				</Parameter>
+				<Parameter>
+					<Name>ExternalTransactionId</Name>
+					<!--Distributor assigned unique transaction GUID for the current transaction-->
+					<Value>S257E147-2DX8-2G69-A3B1-3BABC45E7D25</Value>
+				</Parameter>
+				<Parameter>
+					<Name>JPMCInternalTxnId</Name>
+					<!-- Distributor assigned unique transaction id for the main transaction at JPMC side-->
+					<Value>123456</Value>
+				</Parameter>
+				<Parameter>
+					<Name>QuoteOrIllustrationReference</Name>
+					<!--Ebix supplied Quote or Illustration Reference number that will point to the Quote or Illustration that will be used for this transaction-->
+					<Value>e3c29626-8209-45ea-ae24-bf233263f952</Value>
+				</Parameter>
+<Parameter>
+                    <Name>InternalServiceCall</Name>
+                    <Value>true</Value>
+                </Parameter>
+				<Parameter>
+					<Name>SessionJourneyToContinue</Name>
+					<!--Indicator that user should continue with in lifeSpeed or not-->
+					<Value>true</Value>
+				</Parameter>
+			</Parameters>
+		</Extension>
+	</Extensions>
+</Data>
+]]></saml2:AttributeValue>
+			</saml2:Attribute>
+		</saml2:AttributeStatement>
+	</saml2:Assertion>
+</saml2p:Response>
